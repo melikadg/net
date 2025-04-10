@@ -1,4 +1,4 @@
-(function(){const l=document.createElement("link").relList;if(l&&l.supports&&l.supports("modulepreload"))return;for(const c of document.querySelectorAll('link[rel="modulepreload"]'))h(c);new MutationObserver(c=>{for(const d of c)if(d.type==="childList")for(const f of d.addedNodes)f.tagName==="LINK"&&f.rel==="modulepreload"&&h(f)}).observe(document,{childList:!0,subtree:!0});function r(c){const d={};return c.integrity&&(d.integrity=c.integrity),c.referrerPolicy&&(d.referrerPolicy=c.referrerPolicy),c.crossOrigin==="use-credentials"?d.credentials="include":c.crossOrigin==="anonymous"?d.credentials="omit":d.credentials="same-origin",d}function h(c){if(c.ep)return;c.ep=!0;const d=r(c);fetch(c.href,d)}})();const m=document.querySelectorAll(".hoverme");m.forEach(s=>{s.addEventListener("mouseover",l=>{s.classList.add("bg-[#23252B]")}),s.addEventListener("mouseout",l=>{s.classList.remove("bg-[#23252B]")})});let y=async()=>{let l=await(await fetch("https://melikadg.github.io/gameAPI/db.json")).json();console.log(l);let r=document.querySelector("#container"),h=l.map(c=>`<div class="md:w-[280px] h-[410px] mob:mx-auto  bg-[#23252b] mb-[10px] rounded-[4px] flex flex-col" >
+(function(){const l=document.createElement("link").relList;if(l&&l.supports&&l.supports("modulepreload"))return;for(const c of document.querySelectorAll('link[rel="modulepreload"]'))h(c);new MutationObserver(c=>{for(const d of c)if(d.type==="childList")for(const f of d.addedNodes)f.tagName==="LINK"&&f.rel==="modulepreload"&&h(f)}).observe(document,{childList:!0,subtree:!0});function r(c){const d={};return c.integrity&&(d.integrity=c.integrity),c.referrerPolicy&&(d.referrerPolicy=c.referrerPolicy),c.crossOrigin==="use-credentials"?d.credentials="include":c.crossOrigin==="anonymous"?d.credentials="omit":d.credentials="same-origin",d}function h(c){if(c.ep)return;c.ep=!0;const d=r(c);fetch(c.href,d)}})();const m=document.querySelectorAll(".hoverme");m.forEach(t=>{t.addEventListener("mouseover",l=>{t.classList.add("bg-[#23252B]")}),t.addEventListener("mouseout",l=>{t.classList.remove("bg-[#23252B]")})});let u=async()=>{let l=await(await fetch("https://melikadg.github.io/gameAPI/db.json")).json();console.log(l);let r=document.querySelector("#container"),h=l.map(c=>`<div class="hd:w-[280px] h-[410px] mob:mx-auto  bg-[#23252b] mb-[10px] rounded-[4px] flex flex-col" >
     <img src="${c.image}" class="w-full rounded-t-[4px] h-[160px]" alt="">
 <div class="w-full relative h-[255px] p-[24px]">
   <div class="w-full h-auto flex gap-[4px] ">
@@ -23,8 +23,8 @@
 
 
     
-  </div>`);r.insertAdjacentHTML("afterbegin",h.join(""))};y();let u=`
-  <div class="w-[400px] h-auto absolute z mob:flex-col zedin hd:hidden  mob:flex -translate-x-full bg-[#15171E]">
+  </div>`);r.insertAdjacentHTML("afterbegin",h.join(""))};u();let y=`
+  <div class="w-[400px] overflow-hidden h-auto absolute z mob:flex-col zedin hd:hidden  mob:flex -translate-x-full bg-[#15171E]">
    
             <div class="w-full relative h-[60px] mb-[5px] ">
  <button class="w-[40px] flex items-center justify-center hoverme rounded-[8px] h-[40px] mt-2 ml-2 zabdar">
@@ -1848,8 +1848,8 @@
 
 
 
-`,C=document.querySelector("#hea");C.insertAdjacentHTML("afterbegin",u);let b=document.querySelector(".side"),g=document.querySelector(".zedin"),M=document.querySelector(".zabdar");b.addEventListener("click",()=>{g.classList.contains("-translate-x-full")&&g.classList.remove("-translate-x-full")});M.addEventListener("click",()=>{g.classList.add("-translate-x-full")});const L=document.querySelectorAll(".hoverme");L.forEach(s=>{s.addEventListener("mouseover",l=>{s.classList.add("bg-[#23252B]")}),s.addEventListener("mouseout",l=>{s.classList.remove("bg-[#23252B]")})});let _=document.querySelector(".clickToOpen1"),z=document.querySelector(".clickToOpen2"),S=document.querySelector(".clickToOpen3"),B=document.querySelector(".clickToOpen4"),k=document.querySelector(".clickToOpen5"),F=document.querySelector(".clickToOpen6"),t=document.querySelector(".isOpen1"),e=document.querySelector(".isOpen2"),a=document.querySelector(".isOpen3"),i=document.querySelector(".isOpen4"),p=document.querySelector(".isOpen5"),o=document.querySelector(".isOpen6");_.addEventListener("click",()=>{t.classList.contains("hidden")&&t.classList.remove("hidden"),e.classList.contains("hidden")||e.classList.add("hidden"),a.classList.contains("hidden")||a.classList.add("hidden"),i.classList.contains("hidden")||i.classList.add("hidden"),p.classList.contains("hidden")||p.classList.add("hidden"),o.classList.contains("hidden")||o.classList.add("hidden")});z.addEventListener("click",()=>{e.classList.contains("hidden")&&e.classList.remove("hidden"),t.classList.contains("hidden")||t.classList.add("hidden"),a.classList.contains("hidden")||a.classList.add("hidden"),i.classList.contains("hidden")||i.classList.add("hidden"),p.classList.contains("hidden")||p.classList.add("hidden"),o.classList.contains("hidden")||o.classList.add("hidden")});S.addEventListener("click",()=>{a.classList.contains("hidden")&&a.classList.remove("hidden"),e.classList.contains("hidden")||e.classList.add("hidden"),t.classList.contains("hidden")||t.classList.add("hidden"),i.classList.contains("hidden")||i.classList.add("hidden"),p.classList.contains("hidden")||p.classList.add("hidden"),o.classList.contains("hidden")||o.classList.add("hidden")});B.addEventListener("click",()=>{i.classList.contains("hidden")&&i.classList.remove("hidden"),e.classList.contains("hidden")||e.classList.add("hidden"),a.classList.contains("hidden")||a.classList.add("hidden"),t.classList.contains("hidden")||t.classList.add("hidden"),p.classList.contains("hidden")||p.classList.add("hidden"),o.classList.contains("hidden")||o.classList.add("hidden")});k.addEventListener("click",()=>{p.classList.contains("hidden")&&p.classList.remove("hidden"),e.classList.contains("hidden")||e.classList.add("hidden"),a.classList.contains("hidden")||a.classList.add("hidden"),i.classList.contains("hidden")||i.classList.add("hidden"),t.classList.contains("hidden")||t.classList.add("hidden"),o.classList.contains("hidden")||o.classList.add("hidden")});F.addEventListener("click",()=>{o.classList.contains("hidden")&&o.classList.remove("hidden"),e.classList.contains("hidden")||e.classList.add("hidden"),a.classList.contains("hidden")||a.classList.add("hidden"),i.classList.contains("hidden")||i.classList.add("hidden"),p.classList.contains("hidden")||p.classList.add("hidden"),t.classList.contains("hidden")||t.classList.add("hidden")});let V=`
-<div class="hd:w-[99%] z mob:px-[5px] mob:w-[95%] mx-auto mob:h-[60px] hd:h-[55px] hd:bg-transparent mob:bg-[#23252B] rounded-[5px] flex gap-[8px]  ">
+`,C=document.querySelector("#hea");C.insertAdjacentHTML("afterbegin",y);let b=document.querySelector(".side"),w=document.querySelector(".zedin"),M=document.querySelector(".zabdar");b.addEventListener("click",()=>{w.classList.contains("-translate-x-full")&&w.classList.remove("-translate-x-full")});M.addEventListener("click",()=>{w.classList.add("-translate-x-full")});const L=document.querySelectorAll(".hoverme");L.forEach(t=>{t.addEventListener("mouseover",l=>{t.classList.add("bg-[#23252B]")}),t.addEventListener("mouseout",l=>{t.classList.remove("bg-[#23252B]")})});let _=document.querySelector(".clickToOpen1"),z=document.querySelector(".clickToOpen2"),S=document.querySelector(".clickToOpen3"),k=document.querySelector(".clickToOpen4"),B=document.querySelector(".clickToOpen5"),F=document.querySelector(".clickToOpen6"),s=document.querySelector(".isOpen1"),e=document.querySelector(".isOpen2"),a=document.querySelector(".isOpen3"),i=document.querySelector(".isOpen4"),p=document.querySelector(".isOpen5"),o=document.querySelector(".isOpen6");_.addEventListener("click",()=>{s.classList.contains("hidden")&&s.classList.remove("hidden"),e.classList.contains("hidden")||e.classList.add("hidden"),a.classList.contains("hidden")||a.classList.add("hidden"),i.classList.contains("hidden")||i.classList.add("hidden"),p.classList.contains("hidden")||p.classList.add("hidden"),o.classList.contains("hidden")||o.classList.add("hidden")});z.addEventListener("click",()=>{e.classList.contains("hidden")&&e.classList.remove("hidden"),s.classList.contains("hidden")||s.classList.add("hidden"),a.classList.contains("hidden")||a.classList.add("hidden"),i.classList.contains("hidden")||i.classList.add("hidden"),p.classList.contains("hidden")||p.classList.add("hidden"),o.classList.contains("hidden")||o.classList.add("hidden")});S.addEventListener("click",()=>{a.classList.contains("hidden")&&a.classList.remove("hidden"),e.classList.contains("hidden")||e.classList.add("hidden"),s.classList.contains("hidden")||s.classList.add("hidden"),i.classList.contains("hidden")||i.classList.add("hidden"),p.classList.contains("hidden")||p.classList.add("hidden"),o.classList.contains("hidden")||o.classList.add("hidden")});k.addEventListener("click",()=>{i.classList.contains("hidden")&&i.classList.remove("hidden"),e.classList.contains("hidden")||e.classList.add("hidden"),a.classList.contains("hidden")||a.classList.add("hidden"),s.classList.contains("hidden")||s.classList.add("hidden"),p.classList.contains("hidden")||p.classList.add("hidden"),o.classList.contains("hidden")||o.classList.add("hidden")});B.addEventListener("click",()=>{p.classList.contains("hidden")&&p.classList.remove("hidden"),e.classList.contains("hidden")||e.classList.add("hidden"),a.classList.contains("hidden")||a.classList.add("hidden"),i.classList.contains("hidden")||i.classList.add("hidden"),s.classList.contains("hidden")||s.classList.add("hidden"),o.classList.contains("hidden")||o.classList.add("hidden")});F.addEventListener("click",()=>{o.classList.contains("hidden")&&o.classList.remove("hidden"),e.classList.contains("hidden")||e.classList.add("hidden"),a.classList.contains("hidden")||a.classList.add("hidden"),i.classList.contains("hidden")||i.classList.add("hidden"),p.classList.contains("hidden")||p.classList.add("hidden"),s.classList.contains("hidden")||s.classList.add("hidden")});let V=`
+<div class="hd:w-[99%] overflow-hidden z mob:px-[5px] mob:w-[95%] mx-auto mob:h-[60px] hd:h-[55px] hd:bg-transparent mob:bg-[#23252B] rounded-[5px] flex gap-[8px]  ">
   <div class=" mobile:w-full hd:hidden mob:flex h-full flex justify-center items-center ">
     <label for="s"></label>
     <input type="text" name="s" id="s"
@@ -3069,7 +3069,7 @@
   </div>
 </div>
 
-`,G=document.querySelector("#navi");G.insertAdjacentHTML("afterbegin",V);let I=document.querySelectorAll(".onme"),x=document.querySelectorAll(".happenonme");I.forEach((s,l)=>{s.addEventListener("mouseover",()=>{x[l].classList.contains("hidden")&&x[l].classList.remove("hidden")}),s.addEventListener("mouseout",()=>{x[l].classList.contains("hidden")||x[l].classList.add("hidden")})});let D=`<div class="hd:max-w-[99%] mob:max-w-[99%] mx-auto my-10  " style="width: 1649px; height: 360px;">
+`,G=document.querySelector("#navi");G.insertAdjacentHTML("afterbegin",V);let I=document.querySelectorAll(".onme"),x=document.querySelectorAll(".happenonme");I.forEach((t,l)=>{t.addEventListener("mouseover",()=>{x[l].classList.contains("hidden")&&x[l].classList.remove("hidden")}),t.addEventListener("mouseout",()=>{x[l].classList.contains("hidden")||x[l].classList.add("hidden")})});let D=`<div class="hd:w-[98%] mob:w-[430px] mx-auto my-10 overflow-hidden " style=>
 
     <div class="relative">
         <!-- Main banner with swiper -->
@@ -3126,12 +3126,12 @@
 </div>
 <br>
 <div class="re"></div>
-<br></br>`,P=document.querySelector("#slide");P.insertAdjacentHTML("afterbegin",D);const n=new Swiper(".mySwiper",{loop:!0,autoplay:{delay:5e3,disableOnInteraction:!1}}),W=document.getElementById("playPauseBtn"),w=document.getElementById("pauseIcon"),v=document.getElementById("playIcon");W.addEventListener("click",function(){v.classList.contains("hidden")?(n.autoplay.stop(),w.classList.add("hidden"),v.classList.remove("hidden")):(n.autoplay.start(),w.classList.remove("hidden"),v.classList.add("hidden"))});const H=document.getElementById("customPagination");for(let s=0;s<5;s++){const l=document.createElement("span");l.className="swiper-pagination-bullet",s===0&&l.classList.add("swiper-pagination-bullet-active"),l.style.margin="0 4px",l.style.width="40px",l.style.height="5px",l.style.borderRadius="0px",l.style.backgroundColor="#7c7e7d",l.addEventListener("click",function(){document.querySelectorAll(".swiper-pagination-bullet").forEach(r=>{r.classList.remove("swiper-pagination-bullet-active")}),l.classList.add("swiper-pagination-bullet-active"),n.slideToLoop(0)}),H.appendChild(l)}const A=document.getElementById("prevBtn"),Z=document.getElementById("nextBtn");A.addEventListener("click",()=>{n.slidePrev()});Z.addEventListener("click",()=>{n.slideNext()});let R=`
+<br></br>`,P=document.querySelector("#slide");P.insertAdjacentHTML("afterbegin",D);const n=new Swiper(".mySwiper",{loop:!0,autoplay:{delay:5e3,disableOnInteraction:!1}}),W=document.getElementById("playPauseBtn"),g=document.getElementById("pauseIcon"),v=document.getElementById("playIcon");W.addEventListener("click",function(){v.classList.contains("hidden")?(n.autoplay.stop(),g.classList.add("hidden"),v.classList.remove("hidden")):(n.autoplay.start(),g.classList.remove("hidden"),v.classList.add("hidden"))});const H=document.getElementById("customPagination");for(let t=0;t<5;t++){const l=document.createElement("span");l.className="swiper-pagination-bullet",t===0&&l.classList.add("swiper-pagination-bullet-active"),l.style.margin="0 4px",l.style.width="40px",l.style.height="5px",l.style.borderRadius="0px",l.style.backgroundColor="#7c7e7d",l.addEventListener("click",function(){document.querySelectorAll(".swiper-pagination-bullet").forEach(r=>{r.classList.remove("swiper-pagination-bullet-active")}),l.classList.add("swiper-pagination-bullet-active"),n.slideToLoop(0)}),H.appendChild(l)}const A=document.getElementById("prevBtn"),Z=document.getElementById("nextBtn");A.addEventListener("click",()=>{n.slidePrev()});Z.addEventListener("click",()=>{n.slideNext()});let E=`
 
 
 
-    <footer class="w-full bg-gray-900 text-white border-t border-gray-800">
-        <div class="container mx-auto px-4 py-6">
+    <footer class="w-full  bg-gray-900 text-white border-t border-gray-800">
+        <div class="container hd:block mob:hidden mx-auto px-4 py-6">
           <!-- Top Navigation -->
           <div class="flex flex-col md:flex-row justify-between items-start md:items-center py-4 border-b border-gray-800">
             <nav class="flex space-x-6 text-sm">
@@ -3200,6 +3200,69 @@
             </button>
           </div>
         </div>
+        <div class="w-full h-[350px] hd:hidden mob:flex mob:flex-col ">
+        <div class="w-full  h-[70px] flex  items-center justify-center">
+        <div class="w-auto flex items-center text-[14px] relative text-gray-100 h-full">
+ <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1 mt-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                </svg>
+                English (US)
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 ml-1 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+
+        </div>
+        </div>
+        <div class="w-full h-[20px] flex gap-6 text-[14px] px-[40px]  ">
+    
+                <a href="#" class="hover:text-gray-300">Careers</a>
+              <a href="#" class="">About</a>
+              <a href="#" class="">Support</a>
+              <a href="#" class"">API</a>
+              <a href="#" class="">Contact Us</a>
+              <a href="#" class="">Press</a>
+        
+        </div>
+      <div class="w-full h-[80px] py-8">
+       <svg class="w-[200px] mx-auto " xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"
+              aria-labelledby="blz-icon-title-battlenet-logo" viewBox="0 0 196 32" part="icon">
+              <title id="blz-icon-title-battlenet-logo">Battle.net</title>
+              <path fill="#148EFF" stroke="none"
+                d="M26.193 11.848c.895-2.755 1.063-5.267.453-7.17l-.017-.054c-.037-.103-.128-.321-.243-.321-.088 0-.089.146-.084.22l.006.043c.194 1.7-.326 4.124-1.371 6.663-2.143-.973-4.717-1.75-7.573-2.208-2.566-.413-5.023-.504-7.25-.322.264-1.752.919-2.971 1.993-3.229 1.478-.353 3.09.619 4.627 2.388q.399.054.798.118 1.138.183 2.234.434c-2.803-5.272-6.562-8.227-9.421-7.136-2.176.83-3.287 3.823-3.155 7.846-2.833.603-5.093 1.713-6.436 3.193l-.037.041c-.072.084-.215.272-.157.372.043.075.17.003.233-.038l.034-.026c1.375-1.018 3.735-1.78 6.456-2.145.229 2.343.843 4.96 1.873 7.662.926 2.429 2.076 4.602 3.348 6.44-1.65.648-3.034.69-3.793-.111-1.046-1.103-1.01-2.985-.246-5.202q-.152-.372-.297-.75a35 35 0 0 1-.741-2.151c-3.165 5.063-3.844 9.796-1.47 11.727 1.806 1.47 4.955.935 8.372-1.19 1.939 2.152 4.03 3.554 5.983 3.977l.055.012c.108.02.342.05.4-.05.044-.076-.082-.15-.149-.183l-.04-.017c-1.569-.681-3.409-2.344-5.085-4.518 1.914-1.37 3.874-3.21 5.699-5.454 1.64-2.016 2.947-4.098 3.904-6.119 1.385 1.106 2.113 2.282 1.8 3.34-.433 1.458-2.08 2.368-4.382 2.814a35 35 0 0 1-1.994 2.35c5.967.21 10.405-1.57 10.89-4.59.37-2.3-1.667-4.759-5.217-6.656m-5.183 6.026c-2.104 2.587-4.727 4.789-7.06 6.062a26.4 26.4 0 0 1-2.248-4.496c-1.188-3.116-1.784-6.489-1.72-9.146a26.4 26.4 0 0 1 5.018.301c3.292.53 6.511 1.7 8.78 3.083a26.4 26.4 0 0 1-2.77 4.196">
+              </path>
+              <path fill="#ffffff" stroke="none"
+                d="M75.328 22.603 68.972 9.915a1.86 1.86 0 0 0-1.638-1.002h-3.3c-.685 0-1.32.391-1.638 1.002l-6.307 12.688c-.123.22.048.489.293.489h2.836a.45.45 0 0 0 .415-.244l1.394-2.787h9.362l1.394 2.787c.073.17.22.244.415.244h2.836c.22 0 .367-.269.294-.489M62.42 17.249l2.64-5.304a.38.38 0 0 1 .318-.196h.66c.147 0 .269.073.318.195l2.64 5.305zm133.256-7.994v2.152a.35.35 0 0 1-.343.342h-5.72v12.859a.24.24 0 0 1-.391.195l-2.836-2.42a1 1 0 0 1-.342-.733v-9.901h-4.596a.7.7 0 0 1-.611-.391l-1.1-2.2c-.049-.123.024-.245.146-.245h15.401c.22 0 .392.171.392.342m-30.68 2.738v2.616h10.438a1.419 1.419 0 0 1 0 2.836h-10.438V19.4c0 .489.415.904.904.904h11.759a.35.35 0 0 1 .342.342V22.8a.37.37 0 0 1-.342.342h-12.712a3.625 3.625 0 0 1-3.618-3.618v-8.776c0-1.003.807-1.81 1.809-1.81h14.521a.35.35 0 0 1 .342.343v2.151a.37.37 0 0 1-.342.342h-12.443c-.147-.024-.22.074-.22.22m-6.747-2.64v12.443c0 1.492-1.736 2.323-2.909 1.345l-10.977-9.314v8.85c0 .244-.195.44-.44.44h-2.762c-.245 0-.465-.196-.465-.44v-12.42c0-1.49 1.736-2.322 2.909-1.344l10.977 9.314v-8.85c0-.244.195-.464.44-.464h2.762c.318 0 .465.22.465.44m-34.2 2.64v2.616h7.285a1.418 1.418 0 0 1 0 2.836h-7.261V19.4c0 .489.416.904.905.904h11.758a.35.35 0 0 1 .342.342V22.8a.35.35 0 0 1-.342.342h-12.712a3.626 3.626 0 0 1-3.618-3.618v-8.776c0-1.003.807-1.81 1.809-1.81h14.521a.35.35 0 0 1 .342.343v2.151a.35.35 0 0 1-.342.342h-12.443c-.147-.024-.244.074-.244.22m-5.183 8.605v2.152a.35.35 0 0 1-.342.342h-10.219a3.626 3.626 0 0 1-3.618-3.618V9.255a.35.35 0 0 1 .343-.342h3.006a.35.35 0 0 1 .343.342v10.097c0 .489.415.904.904.904h9.241c.22 0 .342.171.342.342M102.781 9.255v2.152a.35.35 0 0 1-.343.342h-5.329v12.859a.24.24 0 0 1-.391.195l-2.86-2.445a1 1 0 0 1-.343-.757v-9.876H90.02a.7.7 0 0 1-.611-.392l-1.1-2.2c-.05-.098.024-.22.17-.22h13.959a.35.35 0 0 1 .343.342m-50.604 6.6c.66-.244 2.005-.88 2.005-2.688 0-3.105-2.298-4.254-5.036-4.254h-10.56c-.148 0-.343.147-.343.342V22.75a.35.35 0 0 0 .342.342h11.881c1.736-.024 4.23-1.002 4.23-4.205.024-2.004-1.785-2.835-2.519-3.031M41.885 11.97c0-.147.098-.22.22-.22h6.503c.684 0 2.176 0 2.176 1.418s-1.516 1.418-2.176 1.418h-6.723zm7.505 8.263h-7.285c-.146 0-.22-.098-.22-.22V17.42h7.53c.733 0 1.907 0 1.907 1.418 0 1.443-1.345 1.394-1.932 1.394M86.548 9.255v2.152a.35.35 0 0 1-.342.342h-4.18v12.859a.24.24 0 0 1-.391.195l-2.86-2.445a1 1 0 0 1-.343-.733v-9.9h-4.547a.7.7 0 0 1-.61-.392l-1.1-2.2c-.025-.098.048-.22.17-.22h13.861c.147 0 .342.147.342.342">
+              </path>
+              <path fill="#148EFF" stroke="none"
+                d="M134.805 16.003c0-.978.782-1.785 1.784-1.785.978 0 1.785.807 1.785 1.785s-.782 1.785-1.785 1.785a1.78 1.78 0 0 1-1.784-1.785">
+              </path>
+              <path stroke="none"
+                d="M192.975 22.187a1.418 1.418 0 1 1-.003-2.837 1.418 1.418 0 0 1 .003 2.837m0-2.613a1.197 1.197 0 1 0-.004 2.398 1.197 1.197 0 0 0 .004-2.4zm.363 2.014-.5-.673h-.173v.673h-.283v-1.634h.586c.425 0 .611.138.611.46a.443.443 0 0 1-.437.477l.545.693zm-.141-1.376a.7.7 0 0 0-.269-.037h-.263v.542h.263c.251 0 .372-.093.372-.294a.24.24 0 0 0-.103-.212z">
+              </path>
+            </svg>
+      </div>  
+      <div class="w-full h-[40px] px-auto text-[12px] flex flex-col items-center ">
+      
+       <p class="">©2025 Blizzard Entertainment, Inc.</p>
+        <p class="">All <a href="#" class="text-gray-400 hover:underline">trademarks</a> referenced herein are the properties of their respective owners.</p>
+      
+      </div>
+      <div class="w-full text-[14px]  px-[45px] gap-[20px] flex pt-[30px] h-[50px] ">
+      
+                      <a href="#" class="hover:underline">Privacy</a>
+                <a href="#" class="hover:underline">Legal</a>
+                <a href="#" class="hover:underline">Terms</a>
+                <a href="#" class="hover:underline">Cookie Policy</a>
+                <a href="#" class="hover:underline">Cookie Settings</a>
+      
+
+      
+      
+      
+      </div>
+        </div>
+      
       </footer>
 
-`,E=document.querySelector("#f");E.insertAdjacentHTML("afterbegin",R);
+`,R=document.querySelector("#f");R.insertAdjacentHTML("afterbegin",E);
